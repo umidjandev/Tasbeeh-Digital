@@ -3,10 +3,10 @@
     <style name="Theme.TasbeehDigital" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#1A1C19</item>
-        <item name="colorPrimaryVariant">#0F100E</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryDark">#0F100E</item>
+        <item name="colorAccent">@color/white</item>
 
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="l">#151D17</item>
         <!-- Customize your theme here. -->
     </style>
 </resources>

@@ -4,113 +4,106 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="50dp"
     android:background="@drawable/background"
     tools:context=".MainActivity">
 
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/background_full"
+        android:layout_width="300dp"
+        android:layout_height="600dp"
+        android:background="@drawable/ic_back_full"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center">
+        <TextView
+            android:id="@+id/counterNum"
+            android:layout_width="160dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="103dp"
+            android:fontFamily="@font/digital"
+            android:gravity="right"
+            android:maxLines="1"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="80sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlHardcoded" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/background_full"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/ic_back_full">
+        <ImageView
+            android:id="@+id/btn_Reset"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="67dp"
+            android:src="@drawable/ic_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/counterNum"
-                android:layout_width="160dp"
-                android:layout_height="70dp"
-                android:text="0"
-                android:maxLines="1"
-                android:gravity="right"
-                android:fontFamily="@font/digital"
-                android:textSize="80sp"
-                android:textColor="@color/black"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="105dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="RtlHardcoded" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="64dp"
+            android:text="Reset"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/btn_Reset"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginEnd="67dp"
-                android:layout_marginTop="22dp"
-                android:src="@drawable/ic_button"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Reset"
-                android:textColor="@color/white"
-                android:layout_marginEnd="64dp"
-                android:layout_marginTop="65dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+            android:id="@+id/btn_Led"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/ic_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/btn_Led"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginStart="67dp"
-                android:layout_marginTop="22dp"
-                android:src="@drawable/ic_button"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Led"
-                android:textColor="@color/white"
-                android:layout_marginStart="69dp"
-                android:layout_marginTop="65dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="65dp"
+            android:text="Led"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/btn_Counter"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/ic_button"
-                android:layout_marginTop="180dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Count"
-                android:textSize="15sp"
-                android:textColor="@color/white"
-                android:layout_marginTop="294dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+            android:id="@+id/btn_Counter"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="180dp"
+            android:src="@drawable/ic_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="282dp"
+            android:text="Count"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-
-
-
-    </LinearLayout>
-
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
